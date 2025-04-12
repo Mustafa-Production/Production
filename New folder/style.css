@@ -1,0 +1,214 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.header {
+    text-align: center; /* توسيط الشعار في الوسط */
+    padding: 20px 0; /* مسافة فوق وتحت */
+    background-color: #fff; /* خلفية بيضاء */
+    border-bottom: 2px solid #ccc; /* إضافة خط أسفل الرأس */
+}
+
+.logo {
+    max-width: 200px; /* تعيين الحجم الأقصى للشعار */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+/* تنسيق مربع البحث بحيث يكون في وسط الصفحة مع حجم أكبر */
+.search-section {
+    text-align: center; /* توسيط المحتوى داخل القسم */
+    margin: 20px auto; /* إضافة مسافة فوق وأسفل */
+    width: 60%; /* زيادة عرض مربع البحث */
+}
+#search-bar {
+    width: 70%; /* زيادة عرض مربع البحث */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+Button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للمنتجات بالانتقال إلى السطر التالي عند الحاجة */
+    justify-content: space-between; /* توزيع المنتجات بالتساوي في السطر */
+    gap: 20px; /* مسافة بين المنتجات */
+    margin: 0 auto;
+}
+
+.product-pair {
+    display: flex;
+    justify-content: space-between;
+    width: 48%; /* كل منتج سيأخذ 48% من العرض ليتسع لمنتجين في السطر */
+    margin-bottom: 30px; /* مسافة بين الأسطر */
+}
+
+.product {
+    width: 100%; /* كل منتج سيأخذ العرض الكامل داخل الـ product-pair */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 300px; /* تقليل حجم المنتجات */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* تنسيق مربع التقييم ليكون في وسط الصفحة */
+.feedback-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 60%; /* حجم مربع التقييم */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section textarea {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.feedback-section button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* تنسيق قسم التواصل ليكون في وسط الصفحة */
+.contact-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق قسم السلة ليكون في وسط الصفحة */
+.cart-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

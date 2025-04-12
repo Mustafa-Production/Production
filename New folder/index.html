@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegeterans Phobia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>Vegeterans Phobia</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">المنتجات</a></li>
+                <li><a href="#">سلة المشتريات</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم البحث -->
+    <section class="search-section">
+        <input type="text" id="search-bar" placeholder="ابحث عن المنتجات..." />
+        <button onclick="searchProduct()">بحث</button>
+    </section>
+
+    <!-- المنتجات -->
+    <main>
+        <section class="product-list">
+            <!-- لحم بقري صغير -->
+            <div class="product">
+                <img src="1.jpg" alt="لحم بقري صغير">
+                <h3>لحم بقري صغير</h3>
+                <p>سعر: 320 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم بقري صغير" data-price="90">أضف إلى السلة</button>
+            </div>
+            <!-- لحم بقري متوسط -->
+            <div class="product">
+                <img src="1.jpg" alt="لحم بقري متوسط">
+                <h3>لحم بقري متوسط</h3>
+                <p>سعر: 300 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم بقري متوسط" data-price="110">أضف إلى السلة</button>
+            </div>
+            <!-- لحم بقري كبير -->
+            <div class="product">
+                <img src="1.jpg" alt="لحم بقري كبير">
+                <h3>لحم بقري كبير</h3>
+                <p>سعر: 280 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم بقري كبير" data-price="130">أضف إلى السلة</button>
+            </div>
+            <!-- لحم جاموسي صغير -->
+            <div class="product">
+                <img src="2.jpg" alt="لحم جاموسي صغير">
+                <h3>لحم جاموسي صغير</h3>
+                <p>سعر: 300 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم جاموسي صغير" data-price="100">أضف إلى السلة</button>
+            </div>
+            <!-- لحم جاموسي متوسط -->
+            <div class="product">
+                <img src="2.jpg" alt="لحم جاموسي متوسط">
+                <h3>لحم جاموسي متوسط</h3>
+                <p>سعر: 280 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم جاموسي متوسط" data-price="120">أضف إلى السلة</button>
+            </div>
+            <!-- لحم جاموسي كبير -->
+            <div class="product">
+                <img src="2.jpg" alt="لحم جاموسي كبير">
+                <h3>لحم جاموسي كبير</h3>
+                <p>سعر: 260 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم جاموسي كبير" data-price="150">أضف إلى السلة</button>
+            </div>
+            <!-- لحم ضاني -->
+            <div class="product">
+                <img src="3.jpg" alt="لحم ضاني">
+                <h3>لحم ضاني</h3>
+                <p>سعر: 350 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم ضاني" data-price="140">أضف إلى السلة</button>
+            </div>
+            <!-- لحم مفروم -->
+            <div class="product">
+                <img src="4.jpg" alt="لحم مفروم">
+                <h3>لحم مفروم</h3>
+                <p>سعر: 250 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم مفروم" data-price="80">أضف إلى السلة</button>
+            </div>
+            <!-- لحم رأس -->
+            <div class="product">
+                <img src="10.jpg" alt="لحم رأس">
+                <h3>لحم رأس</h3>
+                <p>سعر: 230 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="لحم رأس" data-price="60">أضف إلى السلة</button>
+            </div>
+            <!-- كبدة -->
+            <div class="product">
+                <img src="11.jpg" alt="كبدة">
+                <h3>كبدة</h3>
+                <p>سعر: 220 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="كبدة" data-price="70">أضف إلى السلة</button>
+            </div>
+            <!-- كفتة -->
+            <div class="product">
+                <img src="5.jpg" alt="كفتة">
+                <h3>كفتة</h3>
+                <p>سعر: 200 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="كفتة" data-price="85">أضف إلى السلة</button>
+            </div>
+            <!-- ممبار -->
+            <div class="product">
+                <img src="7.jpg" alt="ممبار">
+                <h3>ممبار</h3>
+                <p>سعر: 210 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="ممبار" data-price="50">أضف إلى السلة</button>
+            </div>
+            <!-- سجق -->
+            <div class="product">
+                <img src="6.jpg" alt="سجق">
+                <h3>سجق</h3>
+                <p>سعر: 220 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="سجق" data-price="95">أضف إلى السلة</button>
+            </div>
+            <!-- كوارع -->
+            <div class="product">
+                <img src="8.jpg" alt="كوارع">
+                <h3>كوارع</h3>
+                <p>سعر: 280 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="كوارع" data-price="55">أضف إلى السلة</button>
+            </div>
+            <!-- عكاوي -->
+            <div class="product">
+                <img src="9.jpg" alt="عكاوي">
+                <h3>عكاوي</h3>
+                <p>سعر: 300 جنيه للكيلو</p>
+                <button class="add-to-cart" data-product="عكاوي" data-price="65">أضف إلى السلة</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- تقييم الخدمة -->
+    <section class="feedback-section">
+        <h2>قيم خدمتنا</h2>
+        <textarea id="feedback" placeholder=" رايك يهمنا..."></textarea>
+        <button onclick="submitFeedback()">أرسل</button>
+    </section>
+
+    <!-- قسم سلة المشتريات -->
+    <section id="cart-summary">
+        <h2>سلة المشتريات</h2>
+        <p>عدد المنتجات في سلتك: <span id="cart-count">0</span></p>
+        <button onclick="viewCart()">عرض السلة</button>
+    </section>
+
+    <!-- Footer (تذييل الصفحة) -->
+    <footer>
+        <p>© 2025 Vegeterans Phobia. جميع الحقوق محفوظة.</p>
+        <p>تابعنا على: <a href="#">فيسبوك</a> | <a href="#">تويتر</a> | <a href="#">إنستجرام</a></p>
+        <p>للتواصل: 01006572931 | 01122677238</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
